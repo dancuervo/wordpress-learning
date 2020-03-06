@@ -31,9 +31,11 @@
 
 wp_reset_postdata();
 
-// THE 2nd LOOP 
-
-print "<div class='row'>";
+// THE 2nd LOOP === prints post if they have `team` category
+?>  
+    <div class="row"><h3>Our team</h3></div>
+    <div class='row'>
+<?php
 
 if( have_posts() )
 {
